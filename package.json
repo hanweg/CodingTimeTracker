@@ -2,7 +2,7 @@
   "name": "codingtimetracker",
   "displayName": "CodingTimeTracker",
   "description": "Track time spent actively editing files in VS Code",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "hanwegaltimer",
   "license": "MIT",
   "icon": "ctticon.png",
