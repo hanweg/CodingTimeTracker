@@ -34,6 +34,10 @@ All data is stored in a SQLite database at:
 - **Windows**: `%USERPROFILE%\.codingtimetracker\timetracker.db`
 - **Linux/macOS**: `~/.codingtimetracker/timetracker.db`
 
+## GitHub Repository
+
+https://github.com/hanweg/CodingTimeTracker
+
 ## Development
 
 ```bash
