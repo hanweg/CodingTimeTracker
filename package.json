@@ -1,0 +1,54 @@
+{
+  "name": "codingtimetracker",
+  "displayName": "CodingTimeTracker",
+  "description": "Track time spent actively editing files in VS Code",
+  "version": "0.1.0",
+  "publisher": "hanwegaltimer",
+  "license": "MIT",
+  "icon": "ctticon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hanweg/CodingTimeTracker"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codingtimetracker.showStats",
+        "title": "CodingtimeTracker: Show All Statistics"
+      },
+      {
+        "command": "codingtimetracker.showFileStats",
+        "title": "CodingtimeTracker: Show Current File Statistics"
+      },
+      {
+        "command": "codingtimetracker.exportData",
+        "title": "CodingtimeTracker: Export Data"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^2.22.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "sql.js": "^1.11.0"
+  }
+}
